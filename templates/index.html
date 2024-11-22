@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Basket Boutique</h1>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Welcome to Basket Boutique</h2>
+            <p>Handcrafted baskets perfect for every occasion.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </section>
+        <section id="blog">
+            <h2>Our Blog</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <h3>How to Style Your Basket</h3>
+                    <p>
+                        Discover tips and tricks to decorate your basket for special occasions.
+                        <a href="#">Read more...</a>
+                    </p>
+                </div>
+                <div class="blog-card">
+                    <h3>Eco-Friendly Baskets</h3>
+                    <p>
+                        Learn how our handmade baskets support a sustainable future.
+                        <a href="#">Read more...</a>
+                    </p>
+                </div>
+                <div class="blog-card">
+                    <h3>Perfect Gifts for Any Occasion</h3>
+                    <p>
+                        Explore how our baskets make the perfect gift for loved ones.
+                        <a href="#">Read more...</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="podcast">
+            <h2>Podcast</h2>
+            <div class="podcast-section">
+                <p>Join us for our latest episodes on basket design, sustainable living, and more!</p>
+                <audio controls>
+                    <source src="{{ url_for('static', filename='podcast1.wav') }}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>
+                    <a href="{{ url_for('static', filename='podcast1.wav') }}" download>Download Episode 1</a>
+                </p>
+            </div>
+        </section>
+        
+        <section id="products">
+            <h2>Our Baskets</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='basket1.jpg') }}" alt="Basket 1">
+                    <h3>Rustic Charm Basket</h3>
+                    <p class="price">$25.00</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='basket2.jpg') }}" alt="Basket 2">
+                    <h3>Elegant Picnic Basket</h3>
+                    <p class="price">$45.00</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='basket3.jpg') }}" alt="Basket 3">
+                    <h3>Classic Storage Basket</h3>
+                    <p class="price">$30.00</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='basket4.jpg') }}" alt="Basket 4">
+                    <h3>Luxury Gift Basket</h3>
+                    <p class="price">$85.00</p>
+                    <button class="btn">Buy Now</button>
+                </div>                
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                At Basket Boutique, we pride ourselves on creating handmade, eco-friendly baskets
+                that bring style and functionality to your home. Each piece is crafted with care and
+                attention to detail, ensuring the highest quality.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Basket Boutique. All rights reserved.</p>
+    </footer>
+</body>
+</html>

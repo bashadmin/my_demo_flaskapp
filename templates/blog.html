@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Basket Boutique</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="blog">
+            <h2>Our Blog</h2>
+            <div class="blog-grid">
+                {% for post in posts %}
+                <div class="blog-card">
+                    <h3>{{ post.title }}</h3>
+                    <p>
+                        {{ post.content }}
+                        <a href="{{ post.link }}">Read more...</a>
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Basket Boutique. All rights reserved.</p>
+    </footer>
+</body>
+</html>

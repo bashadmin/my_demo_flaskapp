@@ -1,0 +1,270 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: #fff;
+}
+
+header nav h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(to bottom right, #007bff, #6a9cff);
+    color: #fff;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+#hero .btn {
+    background-color: #fff;
+    color: #007bff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#hero .btn:hover {
+    background-color: #f4f4f4;
+}
+
+/* Blog Section */
+#blog {
+    padding: 2rem;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+#blog h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.blog-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card h3 {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.blog-card p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.blog-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.blog-card a:hover {
+    text-decoration: underline;
+}
+
+/* Podcast Section */
+#podcast {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+#podcast h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.podcast-section p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.podcast-section a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.podcast-section a:hover {
+    text-decoration: underline;
+}
+
+/* Products Section */
+#products {
+    padding: 2rem;
+    text-align: center;
+}
+
+#products h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.product-card .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.product-card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+#about {
+    padding: 2rem;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#contact form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
